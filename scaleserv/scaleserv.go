@@ -195,7 +195,7 @@ func upldoadHandler(res http.ResponseWriter, r *http.Request) {
 	}
 
 	outFileName := "result.png"
-	base := images["uploadfile"]
+	base := images["image"]
 	watermark := images["watermark"]
 
 	//TODO: parse resolution parameters from request

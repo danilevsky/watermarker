@@ -40,7 +40,7 @@ func postFile(filename string, watermark string, targetURL string, outFilename s
 	bodyBuf := &bytes.Buffer{}
 	bodyWriter := multipart.NewWriter(bodyBuf)
 
-	err := appendFileToWriter(filename, "uploadfile", bodyWriter)
+	err := appendFileToWriter(filename, "image", bodyWriter)
 	if err != nil {
 		return err
 	}
